@@ -1,0 +1,25 @@
+#Tworzenie listy potrzebnej do późniejszych zadań
+
+liczby = [2, 4, 8, 13, 20, 31, 39]
+
+#Maps - dwie możliwości rozwiązania zadania matematycznego zwiększającego listę - liczby o 2
+
+#1
+
+def funkcja(x):
+    return x + 2
+
+wynik = map(funkcja, liczby)
+print(list(wynik))
+
+#2 z użyciem funkcji anonimowej lambda
+
+wynik2 = map(lambda x: x + 2, liczby)
+print(list(wynik2))
+
+#Filters
+
+wynik3 = filter(lambda x: x % 2 == 0, liczby)
+print(list(wynik3))
+
+
